@@ -1,0 +1,85 @@
+.post-comment-container {
+    width: 100%;
+    border-radius: 12px;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+  }
+  .post-comment-section .commentor {
+    width: 100%;
+    float: left;
+    text-align: left;
+    font-size: 12px;
+  }
+  .post-comment-section .comment {
+    color: black;
+    width: auto;
+    float: left;
+    text-align: left;
+    margin-left: 12px;
+    font-size: 12px;
+    padding: 5px 8px 5px 8px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 0 15px 15px 15px;
+    word-wrap: break-word;
+    word-break: break-all;
+    background: rgba(255, 255, 255, 1);
+  }
+  .post-comment-section .comment:hover {
+    border: 1px solid rgba(0, 0, 255, 1);
+  }
+  .post-comment-section {
+    display: block;
+  }
+  .commentor img {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.19);
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .comment-option {
+    width: 100%;
+    left: 0;
+  }
+  .btnReply, .btnDeleteComment {
+    font-size: 10px;
+    float: left;
+    left: 0;
+    border: 1px solid transparent;
+    margin: 0 0 0 5px;
+    padding: 3px 0 0 0;
+    background: transparent;
+  }
+  .btnReply:hover, .btnDeleteComment:hover {
+    border-bottom: 1px solid black;
+  }
+  .btnDeleteComment {
+    color: red;
+  }
+  .comment-reply-section {
+    width: 100%;
+    background: transparent;
+  }
+  .txtcomment {
+    width: 90%;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+  }
+  .comment-reply-section .btnSendReply {
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+    border: 0;
+    background: transparent;
+    border-radius: 50%;
+  }
+  .btnSendReply img {
+    width: 15px;
+    height: 15px;
+  }
+  .comment-reply-section .btnSendReply:hover {
+    border: rgba(0, 0, 0, 0.19);
+  }

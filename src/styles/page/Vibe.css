@@ -1,0 +1,32 @@
+.vibepage-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+.vibepage-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 700px;
+    gap: 12px;
+    margin-top: 65px;
+    padding: 5px;
+    padding-bottom: 30px;
+  }
+.music-post-file audio {
+  width: 100%;
+}
+.vibepage-aside {
+  display: none;
+  min-width: 120px;
+  max-width: 320px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  margin: 55px 0 0 1px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0);
+}
+@media only screen and (max-width: 1023px) {
+  .vibepage-aside {
+    display: none;
+  }
+}

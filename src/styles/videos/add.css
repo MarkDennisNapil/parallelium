@@ -1,0 +1,88 @@
+.vda1-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.vda1-content {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 7px 0;
+    gap: 7px;
+    padding: 3px;
+}
+.vda1-add-post-form {
+    min-width: 180px;
+    padding: 12px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.vda1-add-post-form:hover {
+    border: 1px solid rgba(0, 0, 255, 0.5);
+}
+.vda1-add-post-form label {
+    font-size: 12px;
+    width: 100%;
+    text-align: left;
+    float: left;
+    border-bottom: 1px dotted black;
+}
+.vda1-inputfile {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 7px;
+}
+.vda1-txttitle, .vda1-txtdetails {
+    width: 100%;
+    font-size: 12px;
+    background: transparent;
+    padding: 3px;
+    margin: 3px 0;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.vda1-txttitle:hover, .vda1-txtdetails:hover {
+    border: 1px solid rgba(0, 0, 255, 0.5);
+}
+.vda1-txtdetails {
+    height: 360px;
+}
+.vda1-add-post-form .vda1-txttitle:hover, .vda1-add-post-form .vda1-txtdetails:hover {
+    border: 1px solid rgba(0, 0, 255, 0.5);
+}
+.vda1-btn-addpost {
+    width: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.19);
+    border-radius: 50%;
+}
+.vda1-btn-addpost img {
+    width: 15px;
+    height: 15px;
+}
+.vda1-btn-addpost:hover {
+    background: rgba(230, 230, 230, 1);
+}
+.vda1-btn-cancel {
+  width: auto;
+  float: right;
+  color: white;
+  font-size: 12px;
+  margin-top: 12px;
+  background: rgba(255, 0, 30, 1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1px 5px 1px 5px;
+  border: none;
+  border-radius: 10px;
+}
+.vda1-btn-cancel:hover {
+    background: rgba(0, 0, 0, 1);
+}

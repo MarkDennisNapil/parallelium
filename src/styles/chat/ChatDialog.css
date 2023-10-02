@@ -1,0 +1,44 @@
+.cd1-container {
+    width: 100%;
+    border: 0;
+    background: rgba(230, 230, 230, 0);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 7px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 7px;
+    padding: 3px 2px 3px 2px;
+    border-radius: 12px;
+}
+.cd1-container .cd1-txtmessage {
+    min-width: 200px;
+    padding: 2px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 15px;
+}
+.cd1-container .cd1-txtmessage:hover {
+    border: 1px solid rgba(0, 0, 255, 1);
+}
+.cd1-container Button {
+    font-size: 20px;
+    margin: 0 0 0 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background: transparent;
+}
+.cd1-container Button:hover {
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+.cd1-container Button img {
+    width: 15px;
+    height: 15px;
+}

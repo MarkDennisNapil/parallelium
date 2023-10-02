@@ -1,0 +1,265 @@
+div::-webkit-scrollbar {
+    display: block;
+  }
+  .pu1-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .pu1-content {
+    padding-top: 55px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .pu1-profile-menu {
+    height: 35px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 12px;
+    overflow-x: scroll;
+    background: rgba(255, 255, 255, 0);
+   }
+   .pu1-username-box, .pu1-profession-box, .pu1-contact-box, .pu1-followers-box, .pu1-user-action-box, .pu1-chat-dialog {
+    font-size: 15px;
+   }
+   .pu1-chat-dialog {
+    background: transparent;
+    border-radius: 0 0 12px 12px;
+   }
+  .pu1-profile-menu Button, .pu1-profile-menu Link Button {
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.19);
+    border-radius: 50%;
+    margin: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.19); 
+  }
+  .pu1-profile-menu Button span, .pu1-profile-menu Link Button span {
+    visibility: hidden;
+    width: auto;
+    top: 3%;
+    left: auto;
+    margin-left: 60px;
+    position: absolute;
+    padding: 5px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(0, 0, 0 , 0.19);
+    border-radius: 0 12px 12px 12px;
+  }
+  .pu1-pm-plus:hover span {
+    visibility: visible;
+  }
+  .pu1-pm-idcard:hover span {
+    visibility: visible;
+  }
+  .pu1-pm-scroll:hover span {
+    visibility: visible;
+  }
+  .pu1-pm-music:hover span {
+    visibility: visible;
+  }
+  .pu1-pm-video:hover span {
+    visibility: visible;
+  }
+  .pu1-pm-poweroff:hover span {
+    visibility: visible;
+  }
+  .pu1-profile-menu Button:hover, .pu1-p.pu1-profile-menu Button imgrofile-menu Link Button:hover {
+    background: transparent;
+    border-bottom: 2px solid rgba(0, 0, 255, 1);
+  }
+  .pu1-profile {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 12px;
+  }
+  .pu1-profile-pic {
+    width: 100% auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  .pu1-profile-pic img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid blue;
+    border-radius: 50%;
+    background-size: cover;
+  }
+  .pu1-username-box {
+    font-size: 18px;
+    font-weight: bolder;
+  }
+  .pu1-followers-box label {
+    font-size: 12px;
+  }
+  .pu1-username-box, .pu1-contact-box, .pu1-profession-box, .pu1-phone-box, .pu1-email-box, .pu1-followers-box {
+    font-size: 12px;
+  }
+  .pu1-user-details {
+    width: 100%;
+    height: auto;
+    padding: 3px;
+    border: 0;
+    margin: 5px;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(0, 255, 165, 1), teal);
+    resize: both;
+    min-width: 280px;
+    box-sizing: border-box;
+  }
+  .pu1-user-details button {
+    border: 0;
+    background: transparent;
+  }
+  .pu1-user-details button:hover {
+    border-bottom: 1px solid rgba(0, 0, 255, 1);
+  }
+  .pu1-user-action-box button {
+    font-size: 10px;
+    color: white;
+    padding: 2px 5px 2px 5px;
+    background: rgba(0, 0, 0, 1);
+    margin: 5px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+  }
+  .pu1-user-action-box button:hover {
+    background: rgba(255, 255, 255, 1);
+    color: black;
+    border: 1px solid black;
+  }
+  .pu1-contact-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3px;
+  }
+  .pu1-phone-box, .pu1-email-box {
+    max-width: 50% auto;
+    margin: 0px 7px 0px 7px;
+  }
+  .pu1-phone-box img, .pu1-email-box img {
+    width: 15px;
+    height: 15px;
+  }
+  .pu1-history {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 280px;
+    max-width: 768px;
+    padding: 2px;
+    padding-bottom: 15px;
+    gap: 8px;
+    margin-bottom: 5px;
+    border: 0;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 12px;
+  }
+  div::-webkit-scrollbar {
+    display: none;
+  }
+  .pu1-history-btn {
+    border: 0;
+    width: 100%;
+  }
+  .pu1-post-box {
+    width: 320px;
+    max-height: 480px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .pu1-post-img {
+    width: 100%;
+  }
+  .pu1-post-img img {
+    width: 320px;
+    border-radius: 12px 12px 0 0;
+    background-size: cover;
+  }
+  .pu1-post-box .pu1-post-caption {
+    width: 100%;
+    height: 20px;
+    max-height: 20px;
+    font-size: 14px;
+    text-align: left;
+    white-space: nowrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 3px;
+  }
+  .pu1-post-box .pu1-history-post-action {
+    width: 100%;
+    font-size: 12px;
+    text-align: left;
+  }
+  .pu1-history-post-action {
+    padding: 8px 0 0 0;
+    border: 3px solid cyan;
+    display: none;
+    visibility: hidden;
+  }
+  .pu1-history-post-action button {
+    font-size: 12px;
+    border: 0;
+    margin: 2px;
+    padding: 7px;
+  }
+  .pu1-history-post-action .pu1-delete-post-btn {
+    background: rgba(255, 20, 20, 1);
+  }
+  .pu1-history-post-action .pu1-edit-post-btn {
+    background: rgba(20, 255, 20, 1);
+  }
+  .pu1-post-box label {
+    font-size: 12px;
+    text-align: right;
+    padding: 0;
+    width: 100%;
+    float: right;
+  }
+  
+  .pu1-profile-menu Button img, .pu1-profile-menu Link Button img {
+    width: 15px;
+    height: 15px;
+  }
+  .pu1-msgdialog {
+    display: none;
+  }
+  Link {
+    text-decoration: none;
+    color: black;
+  }
+  h3 {
+    width: 100%;
+  }
+  

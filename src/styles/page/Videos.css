@@ -1,0 +1,16 @@
+.videopage-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.videopage-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 65px;
+}
+.video-post-file video {
+  width: 100%;
+} 

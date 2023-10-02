@@ -1,0 +1,33 @@
+.post-menu {
+  width: 30px;
+  height: auto;
+  margin-right: 5px;
+}
+.post-menu-items {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.19);
+  padding: 3px;
+  border-radius: 15px;
+  flex-direction: column;
+  overflow-x: scroll;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.post-menu-items Button, .post-menu-items Link Button {
+  padding: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.19);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 1);
+}
+.post-menu-items Button img {
+  width: 20px;
+  height: 20px;
+}
+.post-menu-items Button:hover {
+  border-right: 2px solid rgba(0, 0, 255, 1);
+}

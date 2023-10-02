@@ -1,0 +1,158 @@
+.s1-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+.s1-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.s1-searchbar {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin-top: 55px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+}
+.s1-inputsearch {
+    width: 95%;
+    font-size: 15px;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+.s1-inputsearch:focus {
+    outline: 0px solid rgba(0, 255, 165, 1);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+.s1-searchbtn {
+    display: flex;
+    justify-content: center;
+    float: right;
+    font-size: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: rgba(0, 255, 165, 1);
+    padding: 5px;
+    border-radius: 15px;
+}
+.s1-searchbtn img {
+    width: 15px;
+    height: 15px;
+}
+.s1-menubar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    overflow-x: scroll;
+    border: 0;
+}
+.s1-menubar Button {
+    font-size: 15px;
+    padding: 3px 5px 3px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: transparent;
+    border-radius: 8px;
+}
+.s1-menubar Button:hover {
+    background: rgba(0, 255, 165, 1);
+}
+.s1-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    border: 0px solid black;
+    padding-bottom: 8px;
+}
+.s1-res-type {
+    border-top: 2px dashed rgba(0, 0, 0, 0.7);
+}
+.s1-res-type label {
+    font-size: 12px;
+}
+.s1-res-user {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 15px;
+    overflow-y: scroll;
+}
+.s1-res-user .s1-res-type {
+    font-size: 15px;
+    width: 100%;
+    text-align: left;
+}
+.s1-res-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 15px;
+    overflow-y: scroll;
+}
+.s1-res-image .s1-res-type {
+    width: 100%;
+    font-size: 15px;
+    text-align: left;
+}
+.s1-res-video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 15px;
+    overflow-y: scroll;
+}
+.s1-res-video .s1-res-type {
+    width: 100%;
+    font-size: 15px;
+    text-align: left;
+    height: 19px;
+}
+.s1-res-audio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 15px;
+    overflow-y: scroll;
+}
+.s1-res-audio .s1-res-type {
+    width: 100%;
+    font-size: 15px;
+    text-align: left;
+    height: 19px;
+}
+.s1-res-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 15px;
+    overflow-y: scroll;
+}
+.s1-res-text .s1-res-type {
+    width: 100%;
+    font-size: 15px;
+    text-align: left;
+    height: 19px;
+}

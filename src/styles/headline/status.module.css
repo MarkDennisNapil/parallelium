@@ -1,0 +1,53 @@
+.container {
+    width: auto;
+    max-width: 320px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    box-sizing: border-box;
+}
+.userstats {
+    width: 100%;
+    background: linear-gradient(135deg, rgba(0, 255, 0, 1), rgba(0, 255, 165, 1));
+    border-radius: 12px;
+    padding: 5px;
+}
+.userstats:hover {
+    border: 0;
+}
+.userstats label {
+    font-size: 18px;
+}
+.userstats p {
+    width: 100%;
+    font-size: 24px;
+}
+.poststats {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3px;
+    background: linear-gradient(135deg, rgba(255, 255, 165, 1), rgba(255, 165, 0, 1));
+    border-radius: 12px;
+    padding: 5px;
+}
+.poststats:hover {
+    border: 0;
+}
+.poststats label {
+    width: 100%;
+    font-size: 18px;
+}
+.poststats span {
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+.poststats span:hover {
+    background: white;
+}

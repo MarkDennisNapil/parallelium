@@ -1,0 +1,88 @@
+.login-container {
+    height: 100vh;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    background-image: url("../../assets//background//background03.jpg");
+    object-fit: cover;
+  }
+  .login-form {
+    max-width: 320px;
+    padding: 20px;
+    background-image: url("../../assets/background/background01.jpg");
+    object-fit: fill;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 26px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .login-form:hover {
+    padding: 15px;
+    border-radius: 28px;
+  }
+  .login-form h1 {
+    font-size: 18px;
+  }
+  .login-form label {
+    font-size: 16px;
+    float: left;
+    padding: 2px;
+  }
+  .txtemail {
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .txtpassword {
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .login-form .txtemail, .login-form .txtpassword {
+    font-size: 15px;
+    width: 100%;
+    margin: 0 0 3px 0;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .login-form .txtemail:focus, .login-form .txtpassword:focus {
+    outline: 1px solid #0083B0;
+    background: white;
+  }
+  .login-form .txtemail:hover, .login-form .txtpassword:hover {
+    font-size: 18px;
+  }
+  .btn-login {
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 12px;
+    background:#0083B0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 8px;
+    border: 0;
+    border-radius: 15px;
+  }
+  .btn-login:hover {
+    border: 1px solid #0083B0;
+    border-radius: 16px;
+    transition: 0.4s ease-in-out;
+  }
+  .toggle-signup {
+    font-size: 15px;
+    border: 1px solid #0083B0;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 8px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: white;
+  }
+  .toggle-signup:hover {
+    color: white;
+    background: linear-gradient(130deg, #00B4DB, #0083B0);
+  }

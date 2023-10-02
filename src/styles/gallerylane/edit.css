@@ -1,0 +1,63 @@
+.edit-post-form {
+    min-width: 280px;
+    margin: auto;
+    margin-top: 65px;
+    position: relative;
+    float: left;
+    resize: horizontal;
+    z-index: 2;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.19);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+  .epv-tags, .ep-title, .ep-tags, .epv-title, .ep-details, .epv-details, .epv-lyrics{
+    width: 100%;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 3px;
+    margin-bottom: 5px;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.19);
+    border-radius: 0;
+  }
+  .epv-lyrics {
+    height: 300px;
+  }
+  .ep-details{
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.19);
+    border-radius: 12px;
+  }
+  .edit-post-form img{
+    width: 100%;
+    border-radius: 15px;
+  }
+  .edit-post-form label {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    float: left;
+  }
+  .edit-post-form span {
+    font-size: 10px;
+  }
+  .edit-post-form Button {
+    margin: 5px;
+  }
+  .edit-post-form .imageslider {
+    display: flex;
+    justify-content: center;
+  }
+  .edit-post-form .imageslider .btnImageDec, .edit-post-form .imageslider .btnImageInc {
+    display: flex;
+    justify-content: center;
+    border: 0;
+    background: transparent;
+  }
+  .edit-post-form .imageslider .btnImageDec img, .edit-post-form .imageslider .btnImageInc img {
+    width: 15px;
+    height: 15px;
+  }

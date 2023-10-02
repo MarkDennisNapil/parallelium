@@ -1,0 +1,343 @@
+.card-container {
+    border: 0;
+    box-sizing: border-box;
+  }
+  .card-content {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+  }
+  .card-post-blur {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background:rgba(0, 0, 0, 0);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+  }
+  .card-post {
+    width: 280px;
+    height: 370px;
+    box-sizing: border-box;
+    object-fit: cover;
+    background: rgba(255, 255, 255, 1);
+    overflow: hidden;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 15px;
+    border: 1px solid rgba(220, 220, 220, 1);
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .image-slide-control {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: none;
+  }
+  .image-slide-control Button {
+    height: 100%;
+    width: 30%;
+    border: 0;
+    background: transparent;
+  }
+  .previous-slide {
+    float: left;
+  }
+  .next-slide {
+    float: right;
+  }
+  .card-post-owner {
+    width: 100%;
+    display: block;
+    float: left;
+    top: 0;
+    max-height: 20px;
+    padding: 3px;
+    position: absolute;
+    z-index: 1;
+  }
+  .post-btn-show-option {
+    float: right;
+    margin-right: 15px;
+    border: 0;
+    right: 0;
+    font-size: 12px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0);
+  }
+  .card-post-owner:hover {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.3);
+    transition: 0.10s ease-in-out;
+  }
+  .post-item-option {
+    max-width: 150px;
+    display: none;
+    position: fixed;
+    z-index: 2;
+    justify-content: center;
+    flex-wrap: wrap;
+    right: 0;
+    overflow: hidden;
+    padding: 1px;
+    margin-right: 15px;
+    margin-top: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.19);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+  }
+  .post-item-option Button {
+    width: auto;
+    font-size: 12px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 2px 5px 2px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.19);
+    box-sizing: border-box;
+    margin: 3px;
+    background: transparent;
+    border-radius: 12px;
+  }
+  .post-item-option .btn-hide:hover, .post-item-option .btn-edit:hover {
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .post-item-option .btn-delete:hover {
+    background: rgba(255, 0, 0, 1);
+  }
+  .card-post-owner img {
+    width: 25px;
+    height: 25px;
+    left: 0;
+    margin: 0 7px 0 0;
+    float: left;
+    object-fit: cover;
+    border: 0;
+    border-radius: 50%;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2), 2px 3px 3px 2px rgba(0, 0, 0, 0.10);
+  }
+  .card-post-owner img:hover {
+    border-bottom: 2px solid rgba(0, 0, 255, 1);
+  }
+  .card-ownername {
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  .post-btn-show-option {
+    font-size: 15px;
+    padding: 3px;
+    border: 0;
+    right: 0;
+    margin: 0 0px 0 0;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0);
+  }
+  .post-btn-show-option img {
+    width: 15px;
+    height: 15px;
+    border: 0;
+    float: right;
+    box-shadow: none;
+  }
+  .post-btn-show-option img:hover {
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2), 2px 3px 3px 2px rgba(0, 0, 0, 0.10);
+  }
+  .post-details {
+    font-size: 11px;
+  }
+  .card-post-date {
+    width: 50px;
+    height: 20px;
+    font-size: 12px;
+    right: 0;
+    margin-right: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .card-img-container {
+    height: auto;
+    border-radius: 7px;
+    width: 100%;
+  }
+  .card-img-container img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.4s ease-in-out;
+  }
+  .card-img-container img:hover {
+    border-radius: 0;
+    overflow: hidden;
+  }
+  .card-img-container img:focus {
+    border-radius: 0;
+  }
+  .card-post-actions {
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+  }
+  .card-post-actions Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0);
+    margin-right: 7px;
+    text-align: center;
+    border-radius: 50%;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    overflow: none;
+  }
+  .card-post-actions Button img{
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+    background: transparent;
+  }
+  .card-post-actions-delete {
+    background: rgba(255, 0, 0, 1);
+  }
+  .card-post-actions Button:hover {
+    border: 1px solid rgba(0, 0, 255, 1);
+    box-shadow: 0;
+  }
+  .card-caption {
+    font-size: 10px;
+    height: 50px;
+    margin: 3px;
+    border-radius: 7px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0);
+    padding: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .card-caption:hover {
+    background: rgba(255, 255, 255, 0.5);
+    margin: 3px;
+    border-radius: 7px;
+  }
+  .card-caption label {
+    font-size: 18px;
+    padding: 0;
+  }
+  .card-caption:hover label {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
+  }
+  .card-caption .post-date {
+    font-size: 10px;
+  }
+  .card-caption span {
+    font-size: 15px;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  .filelist-items {
+    width: auto;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    overflow-x: scroll;
+    padding-left: 15px;
+  }
+  .file-index-item {
+    height: 20px;
+    width: auto;
+    image-resolution: 60dpi;
+    margin: 1px;
+    border-radius: 3px;
+  }
+  .comment-container {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(15px);
+    max-height: 500px;
+    overflow-y: scroll;
+  }
+  .comments-space {
+    width: 100%;
+    min-height: 30px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 5px;
+    border: 1px dashed rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .btnSendComment {
+    font-size: 15px;
+    padding: 5px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0);
+  }
+  .btnSendComment img {
+    width: 15px;
+    height: 15px;
+  }
+  .comment-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0 3px 0;
+    bottom: 0;
+    box-sizing: border-box;
+    background: transparent;
+    padding: 5px;
+  }
+  .comment-section .txtcomment {
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  .comment-section Button {
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .btnSendComment {
+    float: right;
+  }
+  @media only screen and (max-width: 688px) {
+    .card-container {
+      width: 100%;
+      height: auto;
+    }
+    .card-img-container img {
+      height: auto;
+    }
+    .comment-section {
+      display: block;
+    }
+    .card-post {
+      width: 100%;
+      height: auto;
+      box-sizing: border-box;
+    }
+  }

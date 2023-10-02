@@ -1,0 +1,169 @@
+.video-room-container {
+    display: flex;
+    justify-content: center;
+    width: 320px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.19);
+    border-radius: 12px;
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+    }
+  .video-item-container {
+    padding: 0;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+   }
+  img {
+    object-fit: cover;
+  }
+  .video-post-owner, .video-post-owner Link {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  .video-post-owner label {
+    font-size: 15px;
+    color: black;
+    align-self: baseline;
+    margin: 3px;
+    padding: 0 3px 0 3px;
+    border: 1px solid rgba(200, 200, 200, 1);
+    border-radius: 12px;
+  }
+  .video-post-owner span {
+    font-size: 15px;
+    color: black;
+    text-overflow: ellipsis;
+  }
+  .video-post-owner img {
+    margin-left: 5px;
+    border-radius: 50%;
+  }
+  .video-post-owner .owner-photo {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 15%;
+  }
+  .video-post-owner .btn-show-option {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 0;
+    float: right;
+  }
+  .video-post-owner .btn-show-option img {
+    width: 15px;
+    height: 15px;
+    border: 0;
+  }
+  .video-post-owner .post-item-option {
+    position: relative;
+    right: 0;
+    float: right;
+  }
+  .video-post-file {
+    width: 100%;
+  }
+  .video-post-file video {
+    width: 100%;
+    height: 200px;
+    max-height: 90vh;
+    object-fit: cover;
+    background: transparent;
+    border-radius: 8px;
+  }
+  .video-post-file video:hover {
+    object-fit: contain;
+  }
+  .video-post-file Button {
+    display: none;
+  }
+  .video-card-caption {
+    font-size: 12px;
+    margin: 3px;
+    height: 18px;
+    border-radius: 7px;
+    text-align: left;
+    background: transparent;
+    padding: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .video-card-caption p {
+    font-size: 15px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  .video-card-caption:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 7px;
+  }
+  .video-card-caption label {
+    font-size: 16px;
+    text-overflow: ellipsis;
+  }
+  .videocard-post-actions {
+    display: flex;
+    justify-content: center;
+  }
+  .actionButtonContainer {
+    max-width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+  }
+  .actionButtonContainer Button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    min-width: 25px;
+    height: 25px;
+    padding: 0;
+    border: 0;
+    margin-right: 7px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 12px;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); 
+  }
+  .actionButtonContainer Button img{
+    width: 15px;
+    height: 15px;
+    border: 0;
+    background: transparent;
+  }
+  .videocard-post-actions-delete {
+    background: rgba(255, 0, 0, 1);
+  }
+  .actionButtonContainer Button:hover {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0;
+  }
+  .videocard-post-actions-delete {
+    background: rgba(255, 0, 0, 1);
+  }
+  @media only screen and (max-width: 688px) {
+    .video-room-container {
+      width: 100%;
+      height: auto;
+    }
+    .video-item-container {
+      width: 100%;
+    }
+    .video-post-file {
+      width: 100%;
+    }
+    .video-post-file video {
+      height: auto;
+    }
+  }
+  

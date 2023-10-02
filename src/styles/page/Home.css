@@ -1,0 +1,38 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    background-position: center;
+    transition: 0.4s ease-in-out;
+  }
+  div, button, Button, label, p, span, img {
+    transition: 0.4s ease-in-out;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .content {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 7px;
+    padding: 5px;
+    margin-top: 55px;
+    overflow-y: scroll;
+  }
+  .right-sidebar {
+    display: none;
+    max-width: 380px;
+    float: right;
+    overflow-y: scroll;
+  }
+  @media only screen and (max-width: 1024px) {
+    .content {
+      max-width: 768px;
+    }
+  }

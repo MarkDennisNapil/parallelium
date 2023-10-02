@@ -1,0 +1,116 @@
+.nav {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-top: 2px solid rgba(0, 0, 0 , 0.5);
+  border-bottom: 15px solid rgba(0, 0, 0 , 0);
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
+ }
+.nav-items {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.19);
+  margin-top: 5px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.3s ease-in-out;
+}
+.nav-items:hover {
+  background: rgba(255, 255, 255, 0.2);
+  margin: 0;
+  border-top: 0;
+  border-radius: 0 0 22px 22px;
+}
+.system-title .nav-items-logo {
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  margin-left: 5px;
+  color: black;
+  padding: 0;
+  border-bottom: 0px dotted black;
+  text-align: center;
+  background: transparent;
+}
+.nav-items Button:hover span {
+  transition: 0.01s ease-in-out;
+}
+.nav-items Button {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0 , 0.19);
+  display: flex;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 3px;
+  padding: 0;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.nav-items Button img {
+  width: 15px;
+  height: 15px;
+  padding: 3px;
+  border: 1px solid transparent;
+  background: transparent;
+}
+.nav-items Button:hover {
+  border-bottom: 3px solid rgba(0, 255, 165, 1);
+}
+.btn1, .btn2, .btn3, .btn4, .btn5, .btn6, .btn7, .btn8 {
+  visibility: hidden;
+  width: auto;
+  top: 105%;
+  left: 50%;
+  position: absolute;
+  padding: 5px;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(0, 0, 0 , 0.19);
+  border-radius: 0 12px 12px 12px;
+}
+.nav-items-main:hover .btn1 {
+  visibility: visible;
+}
+.nav-items-text:hover .btn2 {
+  visibility: visible;
+}
+.nav-items-vibe:hover .btn3 {
+  visibility: visible;
+}
+.nav-items-video:hover .btn4 {
+  visibility: visible;
+}
+.nav-items-messenger:hover .btn5 {
+  visibility: visible;
+}
+.nav-items-notif:hover .btn6 {
+  visibility: visible;
+}
+.nav-items-search:hover .btn7 {
+  visibility: visible;
+}
+.nav-items-profile:hover .btn8 {
+  visibility: visible;
+}
+.search-eng {
+  width: 30px;
+  padding: 5px;
+  background: transparent;
+  border: 2px dotted black;
+  border-radius: 18px;
+  box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0 , 0.19);
+}
+.nav .nav-items-logo:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: black;
+  font-weight: bolder;
+}

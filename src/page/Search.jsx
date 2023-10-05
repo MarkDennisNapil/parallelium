@@ -38,7 +38,7 @@ class Search extends React.Component {
       this.setState({ token: token, user_id: user_id });
     }
     }
-    Search = (e) => {
+    Find = (e) => {
         e.preventDefault();
         axios.get(`${api}search/keyword/${this.state.keyword}`)
         .then(response => {
@@ -119,7 +119,7 @@ class Search extends React.Component {
                 <div className="s1-nav"><Navigation /></div>
                 <div className="s1-searchbar">
                     <input type="text" name="keyword" className="s1-inputsearch" value={this.state.keyword} onChange={this.onKeywordChange} placeholder="Search" />
-                    <Button onClick={this.Search} className="s1-searchbtn"><img src={searchicon} />Finder</Button>
+                    <Button onClick={this.Find} className="s1-searchbtn"><img src={searchicon} />Finder</Button>
                 </div>
                 <div className="s1-menubar">
                     <Button onClick={() => this.setState({result: 'all'})}>All</Button>

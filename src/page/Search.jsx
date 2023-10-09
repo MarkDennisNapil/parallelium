@@ -40,7 +40,7 @@ class Search extends React.Component {
     }
     Find = (e) => {
         e.preventDefault();
-        axios.get(`${api}finder/${this.state.keyword}`)
+        axios.get(`${api}finder/text/${this.state.keyword}`)
         .then(response => {
             this.setState({
                 user: response.data.user,

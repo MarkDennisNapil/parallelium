@@ -81,35 +81,35 @@ class Search extends React.Component {
     }
     User(){
         return this.state.user.map((items, i) => {
-            return <div className="s1-res-user"> <span className="s1-res-type">User <label>({this.state.user.length + " result"})</label></span>
+            return <div className="s1-res-user">
             <UserCard item={items} key={i}  />
             </div>;
         });
     }
     Post(){
         return this.state.post.map((items, i) => {
-            return <div className="s1-res-image"><span className="s1-res-type">Images <label>({this.state.post.length + " result"})</label></span>
+            return <div className="s1-res-image">
                 <GalleryItem obj={items} key={i} />
                 </div>;
         });
     }
     Video(){
         return this.state.video.map((items, i) => {
-            return <div className="s1-res-video"><span className="s1-res-type">Videos <label>({this.state.video.length + " result"})</label></span>
+            return <div className="s1-res-video">
             <VideoItem obj={items} key={i} />
             </div>;
         });
     }
     Audio(){
         return this.state.audio.map((items, i) => {
-            return <div className="s1-res-audio"><span className="s1-res-type">Audio <label>({this.state.audio.length + " result"})</label></span>
+            return <div className="s1-res-audio">
             <MusicItem obj={items} key={i} />
             </div>;
         });
     }
     Text(){
         return this.state.text.map((items, i) => {
-            return <div className="s1-res-text"><span className="s1-res-type">Text <label>({this.state.text.length + " result"})</label></span>
+            return <div className="s1-res-text">
             <PaperItem obj={items} key={i} />
             </div>;
         });
@@ -123,12 +123,12 @@ class Search extends React.Component {
                     <Button onClick={this.Find} className="s1-searchbtn"><img src={searchicon} />Finder</Button>
                 </div>
                 <div className="s1-menubar">
-                    <Button onClick={() => this.setState({result: 'all'})}>All</Button>
-                    <Button onClick={() => this.setState({result: 'users'})}>Users</Button>
-                    <Button onClick={() => this.setState({result: 'post'})}>Images</Button>
-                    <Button onClick={() => this.setState({result: 'video'})}>Videos</Button>
-                    <Button onClick={() => this.setState({result: 'audio'})}>Audio</Button>
-                    <Button onClick={() => this.setState({result: 'text'})}>Text</Button>
+                    <Button onClick={() => this.setState({result: 'all'})}>All {this.state.user.length + this.state.post.length + this.state.text.length + this.state.video.length + this.state.audio.length}</Button>
+                    <Button onClick={() => this.setState({result: 'users'})}>Users {this.state.user.length}</Button>
+                    <Button onClick={() => this.setState({result: 'post'})}>Images {this.state.post.length}</Button>
+                    <Button onClick={() => this.setState({result: 'video'})}>Videos {this.state.video.length}</Button>
+                    <Button onClick={() => this.setState({result: 'audio'})}>Audio {this.state.audio.length}</Button>
+                    <Button onClick={() => this.setState({result: 'text'})}>Text {this.state.text.length}</Button>
                 </div>
                 <div className="s1-content">
                     {this.DisplayResult()}

@@ -51,7 +51,7 @@ class Search extends React.Component {
                 video: response.data.video,
                 audio: response.data.music
             });
-            console.log(response.user + "\nKeyword=" + this.state.keyword);
+            console.log(response.data.user + "\nKeyword=" + this.state.keyword);
         })
         .catch(error => {
             console.log(error);

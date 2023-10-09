@@ -51,7 +51,7 @@ class Search extends React.Component {
                 video: response.data.video,
                 audio: response.data.music
             });
-            alert(JSON.stringify(response.data));
+            console.log(response);
         })
         .catch(error => {
             console.log(error);

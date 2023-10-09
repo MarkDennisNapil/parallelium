@@ -40,9 +40,7 @@ class Search extends React.Component {
     }
     Find = (e) => {
         e.preventDefault();
-        const formdata = new FormData();
-        formdata.append('keyword', this.state.keyword);
-        axios.post(`${api}search`, {keyword: this.state.keyword}, headers: {'Content-Type': 'multipart/form-data'})
+        axios.get(`${api}search/${this.state.keyword}`)
         .then(response => {
             this.setState({
                 user: response.data.user,

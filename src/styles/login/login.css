@@ -10,7 +10,7 @@
   .login-form {
     max-width: 320px;
     padding: 20px;
-    background-image: url("../../assets/background/page-turner.svg");
+    /*background-image: url("../../assets/background/page-turner.svg");*/
     object-fit: fill;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);

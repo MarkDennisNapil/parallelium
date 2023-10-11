@@ -26,6 +26,7 @@
   }
   .login-form label {
     font-size: 16px;
+    color: ghostwhite;
     float: left;
     padding: 2px;
   }

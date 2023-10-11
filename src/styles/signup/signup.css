@@ -4,13 +4,13 @@
     display: flex;
     justify-content: center;
     place-items: center;
-    background-image: url("../../assets/background/background03.jpg");
+    background-image: url("../../assets/background/circle-scatter-haikei.svg");
     object-fit: cover;
   }
   .signup-form {
     width: 320px;
     padding: 16px;
-    background-image: url("../../assets//background/background01.jpg");
+    background-image: url("../../assets//background/wave-haikei.svg");
     object-fit: cover;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);

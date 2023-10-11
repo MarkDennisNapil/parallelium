@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     place-items: center;
-    background-image: url("../../assets/background/circle-scatter-haikei.svg");
+    background-image: url("../../assets/background/scattered-forcefields.svg");
     object-fit: cover;
   }
   .signup-form {

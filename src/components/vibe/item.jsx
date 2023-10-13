@@ -169,7 +169,7 @@ class MusicItem extends React.Component {
             <div className="m1-div-left">
             <div className='music-post-owner' onClick={this.viewProfile}>
               <Link to='/view/profile' onClick={this.viewProfile}>
-                <img src={`${api}resources/${this.state.owner.photo}`} className="photo" />
+                <img src={`${api}resources/${this.state.owner.photo}`} loading="lazy" className="photo" />
                 <span>{this.state.owner.first_name + " " + this.state.owner.last_name}</span>
               </Link>
               <Button className="btn-show-option" onClick={this.openPostOption}><img src={ellipsis}/></Button>
@@ -181,7 +181,7 @@ class MusicItem extends React.Component {
             </div>
             <div className="music-post-file">
               <h1>{this.props.obj.title}</h1>
-              <img src={`${api}resources/${this.props.obj.cover_photo}`} style={{animation: `${this.state.musicCoverAni}`}} alt="Failed to load image!" />
+              <img src={`${api}resources/${this.props.obj.cover_photo}`} style={{animation: `${this.state.musicCoverAni}`}} loading="lazy" alt="Failed to load image!" />
               <audio id={`${this.props.obj._id}`} onPlay={this.onAudioPlay} onPause={() => this.setState({wavevisibility: 'none', musicCoverAni: ''})} onChange={this.AudioProgress}>
                 <source src={`${api}resources/${this.props.obj.file}`} type="audio/mpeg" />
               </audio>

@@ -71,7 +71,7 @@ class Comment extends React.Component {
     return (
       <div className="post-comment-container" style={{display: `${this.state.commentVisibility}`}}>
         <div className="post-comment-section">
-          <span className="commentor"><img src={`${api}resources/${this.state.commentordata.photo}`} />{this.state.commentordata.first_name + " " + this.state.commentordata.last_name}</span><br></br>
+          <span className="commentor"><img src={`${api}resources/${this.state.commentordata.photo}`} loading="lazy" />{this.state.commentordata.first_name + " " + this.state.commentordata.last_name}</span><br></br>
           <span className="comment">{this.props.item.comment}</span><br></br>
           <div className="comment-option">
             <br></br><Button onClick={this.toggleReply} className="btnReply">Reply</Button>

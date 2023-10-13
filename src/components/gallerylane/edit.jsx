@@ -69,7 +69,7 @@ class EditPost extends React.Component {
   render() {
     return (
       <div className="edit-post-form">
-        <img src={`${api}resources/${this.state.files[this.state.fileIndex]}`} alt="failed!" />
+        <img src={`${api}resources/${this.state.files[this.state.fileIndex]}`} loading="lazy" alt="failed!" />
         <div className="imageslider">
         <Button className="btnImageDec" onClick={this.DecrementIndex}><img src={btnprev} /></Button>
         <Button className="btnImageInc" onClick={this.IncrementIndex}><img src={btnnext} /></Button>

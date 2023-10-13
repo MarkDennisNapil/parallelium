@@ -8,7 +8,7 @@ class Header extends React.Component {
             <div className="hp1-card">
                 <div className="hp1-item">
                 <div className="hp1-img-container">
-                <img src={me} alt="Parallelium" />
+                <img src={me} alt="Parallelium" loading="lazy" />
                 </div>
                 <div className="hp1-text">
                     <marquee><h1>Welcome to Parallelium</h1></marquee>

@@ -83,7 +83,7 @@ class GalleryItem extends React.Component {
   }
   FileList() {
     return this.state.filelist.map((item, i) => {
-      return <img src={`${api}resources/${this.state.filelist[i]}`} onClick={this.setFileIndex.bind(this, i)} className='file-index-item' width="15px" height="15px" alt='Failed to load image...' />;
+      return <img src={`${api}resources/${this.state.filelist[i]}`} onClick={this.setFileIndex.bind(this, i)} className='file-index-item' loading="lazy" width="15px" height="15px" alt='Failed to load image...' />;
     });
   }
   setFileIndex = (i) => {
@@ -252,7 +252,7 @@ class GalleryItem extends React.Component {
                 <Button className='previous-slide' onTouchStart={this.DecrementIndex} onDoubleClick={this.DecrementIndex}></Button>
                 <Button className='next-slide' onTouchStart={this.IncrementIndex} onDoubleClick={this.IncrementIndex}></Button>
               </div>
-                <img src={`${api}resources/${this.state.filelist[this.state.imgIndex]}`} style={{height: `${this.state.commentContHeight}`}} onClick={this.fetchComments} alt='Failed to load image!' />
+                <img src={`${api}resources/${this.state.filelist[this.state.imgIndex]}`} style={{height: `${this.state.commentContHeight}`}} onClick={this.fetchComments} loading="lazy" alt='Failed to load image!' />
               </div>
               <div className='filelist-items'>
                 {this.FileList()}

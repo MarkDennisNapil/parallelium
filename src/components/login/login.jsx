@@ -24,15 +24,19 @@ class Login extends React.Component {
     this.setState({status: 'Logging In...'});
     axios.post(`${api}auth`, accountObj)
       .then((result) => {
+        if(result.data.verified){
         sessionStorage.setItem('token', result.data.token);
         localStorage.setItem('token', result.data.token);
         localStorage.setItem('user_id', result.data.id);
         this.setState({status: 'Login Success', txtStatusColor: 'cyan'})
         window.location.assign('/');
+        } else {
+        this.setState({status: result.data.message, txtStatusColor: 'red'});
+      }
       })
       .catch((err) => {
         console.log(err);
-        this.setState({status: 'Invalid Credentials!', txtStatusColor: 'red'});
+        this.setState({status: response.data.message, txtStatusColor: 'red'});
       });
   }
   Signup = () => {

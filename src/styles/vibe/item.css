@@ -73,9 +73,9 @@
     transform: scale(1.1);
   }
   .music-post-owner span {
-    color: black;
     font-size: 15px;
     height: 100%;
+    animation: chameleon 30s linear infinite;
   }
   .music-post-owner Button {
     float: right;
@@ -145,6 +145,7 @@
     font-size: 18px;
     margin: 1px 1px 5px 1px;
     padding: 1px;
+    animation: chameleon 30s linear infinite;
   }
   .music-post-file img {
     width: 120px;
@@ -193,6 +194,23 @@
     border-bottom-left-radius: 25%;
     }
   }
+  @keyframes chameleon {
+    12% {
+      color: rgba(0, 255, 165, 1);
+    }
+    24% {
+      color: cyan;
+    }
+    36% {
+      color: blue;
+    }
+    48% {
+      color: blueviolet;
+    }
+    60% {
+      color: red;
+    }
+  }
   .music-post-file audio {
     box-sizing: border-box;
     background: transparent;
@@ -232,6 +250,7 @@
     text-align: center;
     word-wrap: break-word;
     word-break: keep-all;
+    animation: chameleon 30s linear infinite;
   }
   .music-time-control {
     visibility: hidden;

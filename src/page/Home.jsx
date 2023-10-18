@@ -38,7 +38,7 @@ export default class Home extends React.Component {
       });
     const token = localStorage.getItem('token');
     const user_id = localStorage.getItem('user_id');
-    if (token === 'null' || !token) {
+    if (token === null && user_id === null) {
       alert("Not log in!");
       window.location.assign('/login');
     }
@@ -86,7 +86,7 @@ export default class Home extends React.Component {
         <div className='right-sidebar'>
           {this.TextPostData()}
         </div>
-      </div >
+      </div>
     );
   }
 }

@@ -15,6 +15,7 @@ import AddVibeMusic from './components/vibe/add';
 import PostVideo from './components/videos/add';
 import EditUserProfile from './components/profile/edit';
 import Search from './page/Search';
+import AccountVerification from './components/verification/accountVerification';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -44,6 +45,7 @@ export default class App extends React.Component {
             <Route path='/post/vibe/add' element={<AddVibeMusic user_id={this.state.user_id} />} />
             <Route path='/post/video/add' element={<PostVideo user_id={this.state.user_id} />} />
             <Route path='/search' element={<Search />} />
+            <Route path='/:id/:email/:confirm' element={<AccountVerification />}/>
           </Routes>
           </BrowserRouter>
       </div>

@@ -24,6 +24,7 @@ class Login extends React.Component {
     this.setState({status: 'Logging In...'});
     axios.post(`${api}auth`, accountObj)
       .then((result) => {
+        console.log(result);
         if(result.data.verified === true){
         sessionStorage.setItem('token', result.data.token);
         localStorage.setItem('token', result.data.token);

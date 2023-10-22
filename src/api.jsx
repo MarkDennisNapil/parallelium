@@ -1,3 +1,3 @@
-const api = 'https://calm-red-marlin-vest.cyclic.app/'
+const api = 'https://parallelium-server-production.up.railway.app/'
   
 export default api;

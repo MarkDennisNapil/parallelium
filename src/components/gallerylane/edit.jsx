@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import axios from "axios";
-import api from "../../api";
+import {api, resources} from "../../api";
 import { Button } from "react-bootstrap";
 import btnprev from '../../assets/svgs/solid/circle-left.svg';
 import btnnext from '../../assets/svgs/solid/circle-right.svg';
@@ -69,7 +69,7 @@ class EditPost extends React.Component {
   render() {
     return (
       <div className="edit-post-form">
-        <img src={`${api}resources/${this.state.files[this.state.fileIndex]}`} loading="lazy" alt="failed!" />
+        <img src={`${resources}${this.state.files[this.state.fileIndex]}`} loading="lazy" alt="failed!" />
         <div className="imageslider">
         <Button className="btnImageDec" onClick={this.DecrementIndex}><img src={btnprev} /></Button>
         <Button className="btnImageInc" onClick={this.IncrementIndex}><img src={btnnext} /></Button>

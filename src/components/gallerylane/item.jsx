@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 import axios from 'axios';
 import React from 'react';
-import api from '../../api';
+import {api, resources} from '../../api';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import heart from '../../assets/svgs/solid/heart.svg';
@@ -83,7 +83,7 @@ class GalleryItem extends React.Component {
   }
   FileList() {
     return this.state.filelist.map((item, i) => {
-      return <img src={`${api}resources/${this.state.filelist[i]}`} onClick={this.setFileIndex.bind(this, i)} className='file-index-item' loading="lazy" width="15px" height="15px" alt='Failed to load image...' />;
+      return <img src={`${resources}${this.state.filelist[i]}`} onClick={this.setFileIndex.bind(this, i)} className='file-index-item' loading="lazy" width="15px" height="15px" alt='Failed to load image...' />;
     });
   }
   setFileIndex = (i) => {
@@ -252,14 +252,14 @@ class GalleryItem extends React.Component {
                 <Button className='previous-slide' onTouchStart={this.DecrementIndex} onDoubleClick={this.DecrementIndex}></Button>
                 <Button className='next-slide' onTouchStart={this.IncrementIndex} onDoubleClick={this.IncrementIndex}></Button>
               </div>
-                <img src={`https://parallelium-server.000webhostapp.com/${this.state.filelist[this.state.imgIndex]}`} style={{height: `${this.state.commentContHeight}`}} onClick={this.fetchComments} loading="lazy" alt='Failed to load image!' />
+                <img src={`${resources}${this.state.filelist[this.state.imgIndex]}`} style={{height: `${this.state.commentContHeight}`}} onClick={this.fetchComments} loading="lazy" alt='Failed to load image!' />
               </div>
               <div className='filelist-items'>
                 {this.FileList()}
               </div>
               <div className='card-post-owner' onClick={this.viewProfile}>
                 <Link to='/view/profile' onClick={this.viewProfile} >
-                  <img src={`${api}resources/${this.state.owner_info.photo}`} alt='🙂' />
+                  <img src={`${resources}${this.state.owner_info.photo}`} alt='🙂' />
                 </Link>
                 <span className='card-ownername'>{this.state.owner_info.first_name + " " + this.state.owner_info.last_name}</span>
                 <Button className="post-btn-show-option" onClick={this.openPostOption}><img src={ellipsis} /></Button>

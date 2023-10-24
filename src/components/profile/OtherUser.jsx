@@ -2,6 +2,7 @@
 import React from 'react';
 import axios from 'axios';
 import api from '../../api';
+import resources from '../../resources';
 import Navigation from '../navigation/navigationbar';
 import GalleryItem from '../gallerylane/item';
 import PaperItem from '../paper/item';
@@ -129,7 +130,7 @@ export default class ViewOtherProfile extends React.Component {
         <div className='pu1-content'>
           <div className='pu1-profile'>
           <div className='pu1-user-details'>
-            <div className='pu1-profile-pic'><img src={`${api}resources/${this.state.user.photo}`} loading="lazy" alt='Failed to load image!' /></div>
+            <div className='pu1-profile-pic'><img src={`${resources}${this.state.user.photo}`} loading="lazy" alt='Failed to load image!' /></div>
             <div className='pu1-username-box'>{this.state.user.first_name + " " + this.state.user.last_name}</div>
             <div className='pu1-profession-box'>{this.state.user.profession + " "}</div>
             <div className='pu1-contact-box'>

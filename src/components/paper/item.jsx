@@ -2,6 +2,7 @@
 import axios from 'axios';
 import React from 'react';
 import api from '../../api';
+import resources from '../../resources';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import Comment from '../comment/comment';
@@ -208,7 +209,7 @@ export default class PaperItem extends React.Component {
             <div className='textcard-post-blur'>
               <div className='textcard-post-owner' onClick={this.viewProfile}>
                 <Link to='/view/profile' onClick={this.viewProfile}>
-                  <img src={`${api}resources/${this.state.owner_info.photo}`} style={{ height: `${this.state.commentContHeight}` }} loading="lazy" alt='🙂' />
+                  <img src={`${resources}${this.state.owner_info.photo}`} style={{ height: `${this.state.commentContHeight}` }} loading="lazy" alt='🙂' />
                 </Link>
                 <span className='textcard-ownername'>{this.state.owner_info.first_name + " " + this.state.owner_info.last_name}</span>
                 <Button className="btn-show-option" onClick={this.openPostOption}><img src={ellipsis} /></Button>

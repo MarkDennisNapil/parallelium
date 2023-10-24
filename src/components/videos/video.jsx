@@ -2,6 +2,7 @@
 import React from "react";
 import axios from "axios";
 import api from "../../api";
+import resources from '../../resources';
 import { Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import '../../styles/videos/video.css';
@@ -192,15 +193,15 @@ export default class VideoItem extends React.Component {
         <div className="video-item-container">
           <div className="video-item-blur">
             <div className="video-post-file">
-              <video controls onPlay={this.VideoPlaying} onPause={this.Minimize} style={videoFrame} poster={`${api}resources/${this.props.obj.thumbnail}`}>
-                <source src={`${api}resources/${this.props.obj.file}`} type="video/mp4" />
+              <video controls onPlay={this.VideoPlaying} onPause={this.Minimize} style={videoFrame} poster={`${resources}${this.props.obj.thumbnail}`}>
+                <source src={`${resources}${this.props.obj.file}`} type="video/mp4" />
               </video>
               <Button onClick={this.togglePlay} className="btn-minimize-video">{this.state.isPlaying ? "Pause" : "Play"}</Button>
               <ProgressBar value={this.state.progress} max="100" />
             </div>
             <div className='video-post-owner' onClick={this.viewProfile}>
               <Link to='/view/profile' onClick={this.viewProfile}>
-                <img src={`${api}resources/${this.state.owner.photo}`} className="owner-photo" />
+                <img src={`${resources}${this.state.owner.photo}`} className="owner-photo" />
                 <label>{this.state.owner.first_name + " " + this.state.owner.last_name}</label>
                 <span>{this.state.datePosted[0] + " " + this.state.datePosted[1] + " " + this.state.datePosted[2] + " " + this.state.datePosted[3]}</span>
               </Link>

@@ -2,6 +2,7 @@
 import React from 'react';
 import axios from 'axios';
 import api from '../../api';
+import resources from '../../resources';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import Navigation from '../navigation/navigationbar';
@@ -152,7 +153,7 @@ export default class UserProfile extends React.Component {
         <div className='pu1-content'>
           <div className='pu1-profile'>
             <div className='pu1-user-details'>
-            <div className='pu1-profile-pic'><img src={`${api}resources/${this.state.mydata.photo}`} loading="lazy" alt='Failed to load image!' /></div>
+            <div className='pu1-profile-pic'><img src={`${resources}${this.state.mydata.photo}`} loading="lazy" alt='Failed to load image!' /></div>
             <div className='pu1-username-box'>{this.state.mydata.first_name + " " + this.state.mydata.last_name}</div>
             <div className='pu1-profession-box'>{this.state.mydata.profession}</div>
             <div className='pu1-contact-box'>

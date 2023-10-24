@@ -2,6 +2,7 @@
 import React from "react";
 import axios from "axios";
 import api from "../../api";
+import resources from '../../resources';
 import { Button } from "react-bootstrap";
 import '../../styles/paper/edit.css';
 

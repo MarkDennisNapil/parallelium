@@ -260,7 +260,7 @@ class GalleryItem extends React.Component {
               </div>
               <div className='card-post-owner' onClick={this.viewProfile}>
                 <Link to='/view/profile' onClick={this.viewProfile} >
-                  <img src={`${resources}${this.state.owner_info.photo}`} alt='🙂' />
+                  <img src={`${resources}${this.state.owner_info.photo}`} loading="lazy" alt='🙂' />
                 </Link>
                 <span className='card-ownername'>{this.state.owner_info.first_name + " " + this.state.owner_info.last_name}</span>
                 <Button className="post-btn-show-option" onClick={this.openPostOption}><img src={ellipsis} /></Button>

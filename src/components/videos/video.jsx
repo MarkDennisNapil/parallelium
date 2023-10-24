@@ -201,7 +201,7 @@ export default class VideoItem extends React.Component {
             </div>
             <div className='video-post-owner' onClick={this.viewProfile}>
               <Link to='/view/profile' onClick={this.viewProfile}>
-                <img src={`${resources}${this.state.owner.photo}`} className="owner-photo" />
+                <img src={`${resources}${this.state.owner.photo}`} className="owner-photo" loading="lazy" />
                 <label>{this.state.owner.first_name + " " + this.state.owner.last_name}</label>
                 <span>{this.state.datePosted[0] + " " + this.state.datePosted[1] + " " + this.state.datePosted[2] + " " + this.state.datePosted[3]}</span>
               </Link>

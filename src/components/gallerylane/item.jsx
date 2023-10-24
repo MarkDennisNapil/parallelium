@@ -2,7 +2,8 @@
 /* eslint-disable react/prop-types */
 import axios from 'axios';
 import React from 'react';
-import {api, resources} from '../../api';
+import api from '../../api';
+import resources from '../../resources';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import heart from '../../assets/svgs/solid/heart.svg';

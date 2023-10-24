@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import axios from "axios";
-import {api, resources} from "../../api";
+import api from "../../api";
+import resources from '../../resources';
 import { Button } from "react-bootstrap";
 import btnprev from '../../assets/svgs/solid/circle-left.svg';
 import btnnext from '../../assets/svgs/solid/circle-right.svg';

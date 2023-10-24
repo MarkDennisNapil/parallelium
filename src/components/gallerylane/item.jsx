@@ -252,7 +252,7 @@ class GalleryItem extends React.Component {
                 <Button className='previous-slide' onTouchStart={this.DecrementIndex} onDoubleClick={this.DecrementIndex}></Button>
                 <Button className='next-slide' onTouchStart={this.IncrementIndex} onDoubleClick={this.IncrementIndex}></Button>
               </div>
-                <img src={`${api}resources/${this.state.filelist[this.state.imgIndex]}`} style={{height: `${this.state.commentContHeight}`}} onClick={this.fetchComments} loading="lazy" alt='Failed to load image!' />
+                <img src={`https://parallelium-server.000webhostapp.com/${this.state.filelist[this.state.imgIndex]}`} style={{height: `${this.state.commentContHeight}`}} onClick={this.fetchComments} loading="lazy" alt='Failed to load image!' />
               </div>
               <div className='filelist-items'>
                 {this.FileList()}

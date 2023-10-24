@@ -1,3 +1,3 @@
-const api = 'https://fair-blue-clam-cape.cyclic.app/'
+const api = 'https://parallelium-server.onrender.com'
   
 export default api;

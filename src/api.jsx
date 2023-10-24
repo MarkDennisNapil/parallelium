@@ -1,3 +1,3 @@
-const api = 'https://parallelium-server.onrender.com'
+const api = 'https://parallelium-server.onrender.com/'
   
 export default api;

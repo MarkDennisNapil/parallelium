@@ -83,7 +83,7 @@ class GalleryItem extends React.Component {
   }
   FileList() {
     return this.state.filelist.map((item, i) => {
-      return <img src={`${resources}${this.state.filelist[i]}`} onClick={this.setFileIndex.bind(this, i)} className='file-index-item' loading="lazy" width="15px" height="15px" alt='Failed to load image...' />;
+      return <img src={`${resources}/${this.state.filelist[i]}`} onClick={this.setFileIndex.bind(this, i)} className='file-index-item' loading="lazy" width="15px" height="15px" alt='Failed to load image...' />;
     });
   }
   setFileIndex = (i) => {

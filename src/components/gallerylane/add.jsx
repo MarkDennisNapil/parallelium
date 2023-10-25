@@ -31,7 +31,7 @@ class AddPost extends React.Component {
   }
   handleAddPost = (e) => {
     e.preventDefault();
-    this.setState({uploadStatus: 'Uploading post... Please wait a few miunutes...'});
+    this.setState({uploadStatus: 'Uploading post... Please wait a few minutes...'});
     const formdata = new FormData();
     formdata.append('owner', this.props.user_id);
     formdata.append('title', this.state.title);

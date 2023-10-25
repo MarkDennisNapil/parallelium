@@ -1,3 +1,3 @@
-const resources = 'https://parallelium-server.000webhostapp.com/';
+const resources = 'https://parallelium-server.onrender.com/resources/';
 
 export default resources;
